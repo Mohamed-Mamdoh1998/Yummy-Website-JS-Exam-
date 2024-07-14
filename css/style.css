@@ -1,0 +1,150 @@
+/* Variables */
+:root {
+    --main-bg-color: #0d0d0d;
+}
+
+/* Global Rules */
+
+body {
+    /* background-color: var(--main-bg-color); */
+    background-color: #131842;
+    color: white
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i, a {
+    cursor: pointer;
+}
+
+
+/* START LOADING SCREEN */
+/* .inner-loading-screen {
+    z-index: 2;
+    background-color: #85535c;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .loading-screen {
+    z-index: 4;
+    background-color: #e4bfc6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  } */
+
+/** START SIDE NAVBAR*/
+.sideNavBar {
+    background-color: teal;
+    z-index: 3;
+
+    .sideNavBarContent {
+        background-color: #131842;
+        .links ul li {
+            padding: 8px 0;
+            cursor: pointer;
+            transition: all 0.4s;
+            &:hover {
+                color: #ECCEAE;
+                transform: translateX(10px);
+            }
+        }
+    }
+    .sideNavBarHeader {
+        background-color: #E68369;
+
+        .logo img {
+            width: 50px;
+            cursor: pointer;
+        }
+    }
+}
+
+/** END SIDE NAVBAR*/
+.meals .meal-card {
+    border: 2px solid #263b5e;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .meals .meal-card-layer h3 {
+    color: #263b5e;
+    font-size: 35px;
+  }
+  .meals .meal-card-layer p {
+    color: #263b5e;
+  }
+  .meals img {
+    transition: all .5s;
+    
+  }
+  .meal-card:hover img {
+    transform: scale(1.1);
+  }
+  .meals .meal-card-layer {
+    height: 100%;
+    width: 100%;
+    background-color: #eed3d9b9;
+    top: 100%;
+    left: 0px;
+    transition: all 0.4s;
+    /* padding: 10px; */
+  }
+  .meal-card:hover .meal-card-layer {
+    top: 0;
+  }
+  .areaCard {
+    transition: 0.4s all;
+    cursor: pointer;
+    padding: 10px;
+    min-height: 250px;
+  }
+  
+  .areaCard:hover {
+    background-color: #263b5e;
+    color: #e4bfc6;
+  }
+
+  /*^ Start Search Style ^*/
+  .search .form-control {
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid #263b5e;
+  }
+  .search .form-control::placeholder {
+    color: #fff;
+  }
+  .search .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 0 transparent;
+    /* border: ; */
+  }
+  /*^ End Search Style ^*/
+
+  /*^ Start loading-screen Style */
+  
+  .inner-loading-screen {
+    z-index: 2;
+    background-color: var(--main-bg-color);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loading-screen {
+    z-index: 4;
+    background-color: #e4bfc6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*^ End loading-screen Style */
